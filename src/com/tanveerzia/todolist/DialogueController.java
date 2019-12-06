@@ -1,7 +1,5 @@
 package com.tanveerzia.todolist;
 
-import com.tanveerzia.todolist.datamodel.TodoData;
-import com.tanveerzia.todolist.datamodel.TodoItem;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;

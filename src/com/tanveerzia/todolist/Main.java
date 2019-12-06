@@ -1,6 +1,5 @@
 package com.tanveerzia.todolist;
 
-import com.tanveerzia.todolist.datamodel.TodoData;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

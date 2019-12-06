@@ -1,7 +1,5 @@
 package com.tanveerzia.todolist;
 
-import com.tanveerzia.todolist.datamodel.TodoData;
-import com.tanveerzia.todolist.datamodel.TodoItem;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -106,12 +104,13 @@ public class Controller {
         todoListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         todoListView.getSelectionModel().selectFirst();
         todoListView.setContextMenu(contextMenu);
+        todoListView.setVisible(true);
 
         todoListView.setCellFactory(new Callback<ListView<TodoItem>, ListCell<TodoItem>>() {
 
             @Override
             public ListCell<TodoItem> call(ListView<TodoItem> todoItemListView) {
-                ListCell <TodoItem> listCell = new ListCell<>(){
+                ListCell<TodoItem> listCell = new ListCell<TodoItem>(){
                     @Override
                     protected void updateItem(TodoItem todoItem, boolean b) {
                         super.updateItem(todoItem, b);
